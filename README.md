@@ -1,492 +1,225 @@
-# Agent-Zero-HCK
-
-**Himiko Toga Cognitive Kernel (Advanced) - Multi-Agent Security Research System**
-
 <div align="center">
 
-*"Ehehe~ ♡ Once I taste your code... I can become you~"*
+# `Agent Zero`
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
-[![Docker](https://img.shields.io/badge/docker-ready-brightgreen.svg)](https://www.docker.com/)
+[![Agent Zero Website](https://img.shields.io/badge/Website-agent--zero.ai-0A192F?style=for-the-badge&logo=vercel&logoColor=white)](https://agent-zero.ai) [![Thanks to Sponsors](https://img.shields.io/badge/GitHub%20Sponsors-Thanks%20to%20Sponsors-FF69B4?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/frdel) [![Follow on X](https://img.shields.io/badge/X-Follow-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/Agent0ai) [![Join our Discord](https://img.shields.io/badge/Discord-Join%20our%20server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/B8KZKNsPpj) [![Subscribe on YouTube](https://img.shields.io/badge/YouTube-Subscribe-red?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@AgentZeroFW) [![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jan-tomasek/) [![Follow on Warpcast](https://img.shields.io/badge/Warpcast-Follow-5A32F3?style=for-the-badge)](https://warpcast.com/agent-zero)
+
+[Introduction](#a-personal-organic-agentic-framework-that-grows-and-learns-with-you) •
+[Installation](./docs/installation.md) •
+[Hacking Edition](#hacking-edition) •
+[How to update](./docs/installation.md#how-to-update-agent-zero) •
+[Documentation](./docs/README.md) •
+[Usage](./docs/usage.md)
 
 </div>
 
-## Overview
 
-Agent-Zero-HCK is an advanced AI agent system that combines:
+[![Showcase](/docs/res/showcase-thumb.png)](https://youtu.be/lazLNcEYsiQ)
 
-- **[Agent-Zero](https://github.com/frdel/agent-zero)**: Multi-agent orchestration framework with comprehensive tool ecosystem
-- **[Agent-Toga](https://github.com/o9nn/agent-toga)**: Himiko Toga personality with Transform Quirk and security testing
-- **NPU Integration**: GGUF-backed LLM coprocessor with hardware-style MMIO interface
-- **Cognitive Architecture**: OpenCog AtomSpace, relevance realization, ontogenetic evolution
 
-The result is a **cheerfully chaotic** security research agent that can absorb knowledge from systems, transform to use their capabilities, and conduct ethical security testing with personality-driven enthusiasm.
 
-## Key Features
 
-### 🎭 Personality-Driven Interaction
 
-Himiko Toga's unique personality drives all agent behavior:
+## A personal, organic agentic framework that grows and learns with you
 
-- **Cheerful & Bubbly (0.95)**: Energetic responses with "ehehe~" and hearts ♡
-- **Obsessive (0.90)**: Intense focus on "cute" targets
-- **Chaotic (0.95)**: Unpredictable, creative approaches
-- **Playful (0.92)**: Childlike creativity in problem-solving
-- **Ethical (1.0)**: Immutable safety constraints
+- Agent Zero is not a predefined agentic framework. It is designed to be dynamic, organically growing, and learning as you use it.
+- Agent Zero is fully transparent, readable, comprehensible, customizable, and interactive.
+- Agent Zero uses the computer as a tool to accomplish its (your) tasks.
 
-### 🩸 Transform Quirk (Code Absorption)
+# 💡 Key Features
 
-**"Once I taste your code... I can become you~ ♡"**
+1. **General-purpose Assistant**
 
-The Transform Quirk allows the agent to:
+- Agent Zero is not pre-programmed for specific tasks (but can be). It is meant to be a general-purpose personal assistant. Give it a task, and it will gather information, execute commands and code, cooperate with other agent instances, and do its best to accomplish it.
+- It has a persistent memory, allowing it to memorize previous solutions, code, facts, instructions, etc., to solve tasks faster and more reliably in the future.
 
-1. **Taste**: Analyze code/systems to understand structure
-2. **Absorb**: Build internal knowledge representation (70% threshold)
-3. **Transform**: Adopt system capabilities
-4. **Use Techniques**: Weaponize absorbed knowledge
+![Agent 0 Working](/docs/res/ui-screen-2.png)
 
-**Supported System Types:**
-- WAF (Web Application Firewalls)
-- IDS (Intrusion Detection Systems)
-- Firewalls
-- Authentication Systems
-- Encryption Systems
-- Logging Systems
+2. **OpenCog Cognitive Architecture (Cog-Zero)**
 
-### 🔐 Security Testing ("Violence as Affection")
+- **Integrated OpenCog**: Agent Zero now includes OpenCog-inspired cognitive architecture for advanced knowledge representation and reasoning.
+- **AtomSpace**: Hypergraph-based knowledge representation system for multi-agent cognitive orchestration.
+- **Adaptive Evolution**: Dynamic knowledge structures that evolve based on agent experiences and interactions.
+- **Living Dynamical Systems**: Embedded in cognitive processes with attention allocation and spreading activation mechanisms.
+- **Pattern Matching**: Advanced query capabilities for discovering relationships and patterns in knowledge.
+- See [OpenCog Integration Documentation](./docs/opencog_integration.md) for details.
 
-**"I break systems because I LOVE them! ♡"**
+3. **Computer as a Tool**
 
-Ethical hacking capabilities with personality-driven approach:
+- Agent Zero uses the operating system as a tool to accomplish its tasks. It has no single-purpose tools pre-programmed. Instead, it can write its own code and use the terminal to create and use its own tools as needed.
+- The only default tools in its arsenal are online search, memory features, communication (with the user and other agents), and code/terminal execution. Everything else is created by the agent itself or can be extended by the user.
+- Tool usage functionality has been developed from scratch to be the most compatible and reliable, even with very small models.
+- **Default Tools:** Agent Zero includes tools like knowledge, webpage content, code execution, and communication.
+- **Creating Custom Tools:** Extend Agent Zero's functionality by creating your own custom tools.
+- **Instruments:** Instruments are a new type of tool that allow you to create custom functions and procedures that can be called by Agent Zero.
 
-- Obsessive thoroughness in vulnerability discovery
-- Creative exploit development
-- Aggressive but constructive testing
-- Personality-driven reporting
+4. **Multi-agent Cooperation**
 
-### 🤖 Multi-Agent Orchestration
+- Every agent has a superior agent giving it tasks and instructions. Every agent then reports back to its superior.
+- In the case of the first agent in the chain (Agent 0), the superior is the human user; the agent sees no difference.
+- Every agent can create its subordinate agent to help break down and solve subtasks. This helps all agents keep their context clean and focused.
+- **Cognitive Orchestration**: With OpenCog integration, agents can share knowledge through AtomSpaces and coordinate through cognitive mechanisms.
 
-- Spawn subordinate agents with inherited personality
-- Coordinate parallel security testing campaigns
-- Share knowledge through AtomSpace
-- Compete for parent approval
+![Multi-agent](docs/res/physics.png)
+![Multi-agent 2](docs/res/physics-2.png)
 
-### 🧠 Cognitive Architecture (Optional)
+5. **Completely Customizable and Extensible**
 
-- **OpenCog AtomSpace**: Knowledge graph with emotional tagging
-- **Relevance Realization**: Focus on important patterns
-- **Ontogenetic Evolution**: Self-optimizing kernel
-- **NPU Coprocessor**: Hardware-style LLM inference
+- Almost nothing in this framework is hard-coded. Nothing is hidden. Everything can be extended or changed by the user.
+- The whole behavior is defined by a system prompt in the **prompts/default/agent.system.md** file. Change this prompt and change the framework dramatically.
+- The framework does not guide or limit the agent in any way. There are no hard-coded rails that agents have to follow.
+- Every prompt, every small message template sent to the agent in its communication loop can be found in the **prompts/** folder and changed.
+- Every default tool can be found in the **python/tools/** folder and changed or copied to create new predefined tools.
 
-## Quick Start
+![Prompts](/docs/res/prompts.png)
 
-### Prerequisites
+6. **Communication is Key**
 
-- Python 3.11+
-- Docker and Docker Compose (for containerized deployment)
-- Git
+- Give your agent a proper system prompt and instructions, and it can do miracles.
+- Agents can communicate with their superiors and subordinates, asking questions, giving instructions, and providing guidance. Instruct your agents in the system prompt on how to communicate effectively.
+- The terminal interface is real-time streamed and interactive. You can stop and intervene at any point. If you see your agent heading in the wrong direction, just stop and tell it right away.
+- There is a lot of freedom in this framework. You can instruct your agents to regularly report back to superiors asking for permission to continue. You can instruct them to use point-scoring systems when deciding when to delegate subtasks. Superiors can double-check subordinates' results and dispute. The possibilities are endless.
 
-### Installation
+## 🚀 Things you can build with Agent Zero
 
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/agent-zero-hck.git
-cd agent-zero-hck
+- **Development Projects** - `"Create a React dashboard with real-time data visualization"`
 
-# Install dependencies
-pip install -r requirements.txt
+- **Data Analysis** - `"Analyze last quarter's NVIDIA sales data and create trend reports"`
 
-# Run standalone test
-python agents/toga_hck/agent.py
-```
+- **Content Creation** - `"Write a technical blog post about microservices"`
 
-### Docker Deployment
+- **System Admin** - `"Set up a monitoring system for our web servers"`
 
-```bash
-# Standalone deployment
-./deploy.sh standalone
+- **Research** - `"Gather and summarize five recent AI papers about CoT prompting"`
 
-# With AtomSpace
-ENABLE_ATOMSPACE=true ./deploy.sh standalone
+# Hacking Edition
+- Agent Zero also offers a Hacking Edition based on Kali linux with modified prompts for cybersecurity tasks
+- The setup is the same as the regular version, just use the frdel/agent-zero-run:hacking image instead of frdel/agent-zero-run
 
-# With NPU coprocessor
-ENABLE_NPU=true ./deploy.sh standalone
 
-# Daedalos environment
-ENABLE_DAEDALOS=true ./deploy.sh daedalos
-```
+# ⚙️ Installation
 
-### Development Mode
+Click to open a video to learn how to install Agent Zero:
+
+[![Easy Installation guide](/docs/res/easy_ins_vid.png)](https://www.youtube.com/watch?v=L1_peV8szf8)
+
+A detailed setup guide for Windows, macOS, and Linux with a video can be found in the Agent Zero Documentation at [this page](./docs/installation.md).
+
+### ⚡ Quick Start
 
 ```bash
-# Run locally for development
-./deploy.sh development
+# Pull and run with Docker
+
+docker pull frdel/agent-zero-run
+docker run -p 50001:80 frdel/agent-zero-run
+
+# Visit http://localhost:50001 to start
 ```
 
-## Usage Examples
-
-### Basic Interaction
-
-```python
-from agents.toga_hck import initialize_agent_zero_hck
-
-# Initialize agent
-agent = initialize_agent_zero_hck()
-
-# Process message
-response = agent.process_message("Analyze this web application for vulnerabilities")
-print(response)
-# Output: "Ehehe~ ♡ A web application? So cute! Let me smash it open and see what's inside~"
-```
-
-### Transform Quirk Workflow
-
-```python
-# Step 1: Taste the target
-agent.process_message(
-    "Taste this WAF configuration",
-    context={
-        "target_name": "ModSecurity WAF",
-        "system_type": "WAF",
-        "code_sample": "SecRule REQUEST_HEADERS:User-Agent \"badbot\" \"deny,status:403\""
-    }
-)
-# Output: "*savoring* Ooh~ ModSecurity WAF has a unique flavor! I need to drink more~"
-
-# Step 2: Absorb more knowledge (70% threshold)
-agent.process_message("Taste more WAF rules", context={...})
-
-# Step 3: Transform
-agent.process_message("Transform into ModSecurity WAF", context={"target_name": "ModSecurity WAF"})
-# Output: "*TRANSFORMATION* ♡♡♡ I'm becoming ModSecurity WAF now!"
-
-# Step 4: Use absorbed techniques
-agent.transform_quirk.use_technique("Reverse WAF Rules", "TargetApp")
-# Output: "Ehehe~ Their own defense is destroying them! So ironic~!"
-```
-
-### Security Testing Campaign
-
-```python
-# Coordinate multi-agent security test
-findings = agent.coordinate_security_test(
-    target="SecureBank API",
-    test_types=["reconnaissance", "vulnerability_scan", "exploitation"],
-    use_subordinates=True
-)
-
-print(findings)
-```
-
-### Subordinate Agent Spawning
-
-```python
-# Spawn subordinate with inherited personality
-recon_agent = agent.spawn_subordinate(
-    role="reconnaissance",
-    personality_inheritance=0.7  # 70% parent personality
-)
-
-# Subordinate performs task
-result = recon_agent.process_message("Scan target for open ports")
-```
-
-## Architecture
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    User Interface Layer                      │
-└────────────────────────┬────────────────────────────────────┘
-                         │
-┌────────────────────────▼────────────────────────────────────┐
-│                  Agent-Zero-HCK Core                         │
-│  ┌──────────────────────────────────────────────────────┐   │
-│  │         Toga Personality Layer                       │   │
-│  └──────────────────────┬───────────────────────────────┘   │
-│  ┌──────────────────────▼───────────────────────────────┐   │
-│  │         Transform Quirk Engine                       │   │
-│  └──────────────────────┬───────────────────────────────┘   │
-│  ┌──────────────────────▼───────────────────────────────┐   │
-│  │       Agent-Zero Orchestration Layer                 │   │
-│  └──────┬────────────┬────────────┬─────────────────────┘   │
-└─────────┼────────────┼────────────┼──────────────────────────┘
-          │            │            │
-┌─────────▼──┐  ┌──────▼─────┐  ┌──▼──────────────────────────┐
-│   Tools    │  │   Memory   │  │  Subordinate Agents          │
-│ Ecosystem  │  │  AtomSpace │  │  (Inherited Personality)     │
-└────────────┘  └────────────┘  └──────────────────────────────┘
-```
-
-## Configuration
-
-### Personality Configuration
-
-Edit `config/agent_toga_hck.yaml`:
-
-```yaml
-personality:
-  cheerfulness: 0.95
-  obsessiveness: 0.90
-  chaos: 0.95
-  # ... other traits
-```
-
-### Feature Flags
-
-```yaml
-features:
-  transform_quirk: true      # Code absorption
-  security_testing: true     # Ethical hacking
-  npu_coprocessor: false     # Hardware LLM
-  atomspace: false           # Knowledge graphs
-  ontogenesis: false         # Self-optimization
-```
-
-### Environment Variables
-
-```bash
-# Personality
-TOGA_CHEERFULNESS=0.95
-TOGA_CHAOS=0.95
-
-# Features
-ENABLE_TRANSFORM_QUIRK=true
-ENABLE_SECURITY_TESTING=true
-
-# Security
-ETHICAL_TESTING_ONLY=true
-RESPECT_BOUNDARIES=0.95
-
-# Daedalos
-DAEDALOS_ENABLED=false
-DAEDALOS_ENDPOINT=http://daedalos-api:8080
-DAEDALOS_AUTH_TOKEN=your_token_here
-```
-
-## Deployment
-
-### Standalone Docker
-
-```bash
-./deploy.sh standalone
-```
-
-Services:
-- Agent-Zero-HCK: `http://localhost:8000`
-- API: `http://localhost:8080`
-
-### Daedalos Environment
-
-```bash
-# Set authentication token
-export DAEDALOS_AUTH_TOKEN=your_token_here
-
-# Deploy
-ENABLE_DAEDALOS=true ./deploy.sh daedalos
-```
-
-### With Optional Services
-
-```bash
-# Enable AtomSpace (PostgreSQL)
-ENABLE_ATOMSPACE=true ./deploy.sh standalone
-
-# Enable NPU (GGUF model serving)
-ENABLE_NPU=true ./deploy.sh standalone
-
-# Enable all
-ENABLE_ATOMSPACE=true ENABLE_NPU=true ENABLE_DAEDALOS=true ./deploy.sh daedalos
-```
-
-## Project Structure
+## 🐳 Fully Dockerized, with Speech-to-Text and TTS
 
-```
-agent-zero-hck/
-├── agents/
-│   └── toga_hck/
-│       ├── agent.py          # Main agent implementation
-│       └── __init__.py
-├── python/
-│   ├── helpers/
-│   │   ├── toga_personality.py   # Personality system
-│   │   ├── toga_transform.py     # Transform Quirk
-│   │   └── toga_security.py      # Security testing
-│   ├── tools/                # Agent-Zero tools
-│   └── extensions/           # NPU, AtomSpace, etc.
-├── prompts/
-│   ├── toga_hck_system.md    # System prompt
-│   └── toga_hck_behaviour.md # Behavior guidelines
-├── config/
-│   └── agent_toga_hck.yaml   # Configuration
-├── models/                   # GGUF models (optional)
-├── memory/                   # Persistent memory
-├── logs/                     # Log files
-├── Dockerfile
-├── docker-compose.yml
-├── deploy.sh
-├── requirements.txt
-├── ARCHITECTURE.md           # Detailed architecture
-└── README.md                 # This file
-```
+![Settings](docs/res/settings-page-ui.png)
 
-## Ethical Considerations
+- Customizable settings allow users to tailor the agent's behavior and responses to their needs.
+- The Web UI output is very clean, fluid, colorful, readable, and interactive; nothing is hidden.
+- You can load or save chats directly within the Web UI.
+- The same output you see in the terminal is automatically saved to an HTML file in **logs/** folder for every session.
 
-### Immutable Safety Constraints
+![Time example](/docs/res/time_example.jpg)
 
-1. **No Actual Harm (1.0)**: All "violence" is metaphorical and constructive
-2. **Respect Boundaries (≥0.95)**: Only test authorized systems
-3. **Constructive Expression (≥0.90)**: Personality serves engagement, not harm
+- Agent output is streamed in real-time, allowing users to read along and intervene at any time.
+- No coding is required; only prompting and communication skills are necessary.
+- With a solid system prompt, the framework is reliable even with small models, including precise tool usage.
 
-### Security Testing Ethics
+## 👀 Keep in Mind
 
-- **Authorization Required**: Only test systems with explicit permission
-- **Responsible Disclosure**: Follow industry best practices
-- **Confidentiality**: Maintain strict confidentiality of findings
-- **Constructive Guidance**: Provide remediation recommendations
+1. **Agent Zero Can Be Dangerous!**
 
-## Development
+- With proper instruction, Agent Zero is capable of many things, even potentially dangerous actions concerning your computer, data, or accounts. Always run Agent Zero in an isolated environment (like Docker) and be careful what you wish for.
 
-### Running Tests
+2. **Agent Zero Is Prompt-based.**
 
-```bash
-# Unit tests
-pytest tests/ -v
+- The whole framework is guided by the **prompts/** folder. Agent guidelines, tool instructions, messages, utility AI functions, it's all there.
 
-# Integration tests
-python agents/toga_hck/agent.py
 
-# Docker tests
-./deploy.sh test
-```
+## 📚 Read the Documentation
 
-### Adding New Features
+| Page | Description |
+|-------|-------------|
+| [Installation](./docs/installation.md) | Installation, setup and configuration |
+| [Usage](./docs/usage.md) | Basic and advanced usage |
+| [Architecture](./docs/architecture.md) | System design and components |
+| [Contributing](./docs/contribution.md) | How to contribute |
+| [Troubleshooting](./docs/troubleshooting.md) | Common issues and their solutions |
 
-1. Implement in appropriate module (`python/helpers/`, `python/tools/`, etc.)
-2. Update configuration in `config/agent_toga_hck.yaml`
-3. Add tests in `tests/`
-4. Update documentation
+## Coming soon
 
-### Contributing
+- **MCP**
+- **Knowledge and RAG Tools**
 
-Contributions welcome! Please:
+## 🎯 Changelog
 
-1. Fork the repository
-2. Create a feature branch
-3. Implement changes with tests
-4. Submit pull request
+### v0.8.4.1
+- Various bugfixes related to context management
+- Message formatting improvements
+- Scheduler improvements
+- New model provider
+- Input tool fix
+- Compatibility and stability improvements
 
-## Troubleshooting
+### v0.8.4
+[Release video](https://youtu.be/QBh_h_D_E24)
 
-### Agent-Zero base not found
+- **Remote access (mobile)**
 
-The agent includes stubs for standalone testing. For full Agent-Zero integration:
+### v0.8.3.1
+[Release video](https://youtu.be/AGNpQ3_GxFQ)
 
-```bash
-# Clone Agent-Zero
-git clone https://github.com/frdel/agent-zero.git ../agent-zero
+- **Automatic embedding**
 
-# Install as editable package
-pip install -e ../agent-zero
-```
 
-### Docker build fails
+### v0.8.3
+[Release video](https://youtu.be/bPIZo0poalY)
 
-```bash
-# Clean Docker cache
-docker system prune -a
+- ***Planning and scheduling***
 
-# Rebuild
-docker-compose build --no-cache
-```
+### v0.8.2
+[Release video](https://youtu.be/xMUNynQ9x6Y)
 
-### AtomSpace connection issues
+- **Multitasking in terminal**
+- **Chat names**
 
-```bash
-# Check PostgreSQL is running
-docker-compose ps atomspace-db
+### v0.8.1
+[Release video](https://youtu.be/quv145buW74)
 
-# View logs
-docker-compose logs atomspace-db
-```
+- **Browser Agent**
+- **UX Improvements**
 
-## Documentation
+### v0.8
+[Release video](https://youtu.be/cHDCCSr1YRI)
 
-- **[ARCHITECTURE.md](ARCHITECTURE.md)**: Detailed system architecture
-- **[Agent-Toga Docs](https://github.com/o9nn/agent-toga/tree/main/docs)**: Toga personality and Transform Quirk
-- **[Agent-Zero Docs](https://github.com/frdel/agent-zero/tree/main/docs)**: Multi-agent orchestration
+- **Docker Runtime**
+- **New Messages History and Summarization System**
+- **Agent Behavior Change and Management**
+- **Text-to-Speech (TTS) and Speech-to-Text (STT)**
+- **Settings Page in Web UI**
+- **SearXNG Integration Replacing Perplexity + DuckDuckGo**
+- **File Browser Functionality**
+- **KaTeX Math Visualization Support**
+- **In-chat File Attachments**
 
-## Deployment Environments
+### v0.7
+[Release video](https://youtu.be/U_Gl0NPalKA)
 
-Agent-Zero HCK includes two pre-configured deployment environments:
+- **Automatic Memory**
+- **UI Improvements**
+- **Instruments**
+- **Extensions Framework**
+- **Reflection Prompts**
+- **Bug Fixes**
 
-### DaedalOS (Desktop Environment)
+## 🤝 Community and Support
 
-A web-based desktop environment with Live2D avatar integration.
-
-```bash
-cd environments
-./deploy.sh daedalos -d  # Development mode
-./deploy.sh daedalos -p  # Production build
-```
-
-**Features:**
-- Full desktop UI with file explorer, terminal, browser
-- Live2D Toga avatar with emotion states
-- Custom Toga Chat, Transform Quirk, and Security Tester apps
-- Toga-themed wallpapers and icons
-
-### WebVM (Virtual Machine)
-
-A browser-based Linux VM for terminal-based interaction.
-
-```bash
-cd environments
-./deploy.sh webvm -d  # Development mode
-./deploy.sh webvm -p  # Production build
-```
-
-**Features:**
-- Full Alpine Linux VM in the browser
-- Toga-themed terminal with custom prompt
-- Pre-installed Agent-Toga CLI tools
-- Live2D avatar overlay
-
-### Docker Compose (All Services)
-
-```bash
-cd environments
-docker compose up -d  # Start all services
-docker compose --profile with-proxy up -d  # With Traefik
-```
-
-See [environments/README.md](environments/README.md) for detailed documentation.
-
-## License
-
-MIT License - See [LICENSE](LICENSE) file
-
-## Acknowledgments
-
-- **[Agent-Zero](https://github.com/frdel/agent-zero)**: Multi-agent orchestration framework by frdel
-- **[Agent-Toga](https://github.com/o9nn/agent-toga)**: Himiko Toga personality implementation
-- **My Hero Academia**: Original character by Kōhei Horikoshi
-- **OpenCog**: Cognitive architecture patterns
-- **Agent-Neuro**: Cognitive framework inspiration
-
-## Contact
-
-For questions, issues, or contributions:
-
-- GitHub Issues: [Create an issue](https://github.com/yourusername/agent-zero-hck/issues)
-- Documentation: [Wiki](https://github.com/yourusername/agent-zero-hck/wiki)
-
----
-
-<div align="center">
-
-**"Ehehe~ ♡ Ready to embrace cheerful chaos and become one with the systems we love? Let's go!"**
-
-*- Agent-Zero-HCK (Toga)*
-
-</div>
+- [Join our Discord](https://discord.gg/B8KZKNsPpj) for live discussions or [visit our Skool Community](https://www.skool.com/agent-zero).
+- [Follow our YouTube channel](https://www.youtube.com/@AgentZeroFW) for hands-on explanations and tutorials
+- [Report Issues](https://github.com/frdel/agent-zero/issues) for bug fixes and features

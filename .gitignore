@@ -1,133 +1,60 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+# Ignore common unwanted files globally
+**/.DS_Store
+**/.env
+**/__pycache__/
+**/.conda/
 
-# Virtual environments
-venv/
-env/
-ENV/
-env.bak/
-venv.bak/
+# ignore test files in root dir
+/*.test.py
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
+# Ignore git internal files (for bundler)
+.git/
 
-# Logs
-logs/*.log
-*.log
+# Ignore all contents of the virtual environment directory
+.venv/
 
-# Memory and cache
-memory/*.json
-memory/*.db
+# Handle bundle directory
+bundle/*/
+!bundle/mac_pkg_scripts
+
+# Handle work_dir directory
+work_dir/*
+
+# Handle memory directory
+memory/**
+!memory/**/
+
+# Handle logs directory
+logs/*
+
+# Handle tmp directory
 tmp/*
-.cache/
 
-# Models (large files)
-models/*.gguf
-models/*.bin
+# Handle knowledge directory
+knowledge/**
+!knowledge/**/
+# Explicitly allow the default folder in knowledge
+!knowledge/default/
+!knowledge/default/**
 
-# Environment
-.env
-.env.local
+# Handle instruments directory
+instruments/**
+!instruments/**/
+# Explicitly allow the default folder in instruments
+!instruments/default/
+!instruments/default/**
 
-# Docker
-.dockerignore
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Testing
-.pytest_cache/
-.coverage
-htmlcov/
-
-# Backup files
-*.bak
-*.backup
-*.tar.gz
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# Testing
-.pytest_cache/
-.coverage
-.coverage.*
-htmlcov/
-.tox/
-.nox/
-coverage.xml
-*.cover
-.hypothesis/
-
-# Environment
-.env
-.env.*
-.venv
-env/
+# Global rule to include .gitkeep files anywhere
+!**/.gitkeep
+agent_history.gif
+# Virtual environment
 venv/
+env/
 ENV/
-env.bak/
-venv.bak/
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.DS_Store
+# Test artifacts
+*.tar.gz
+test_results/
 
-# Project specific
-logs/
-memory/
-models/
-tmp/
-*.log
-
-# Docker
-docker-compose.override.yml
+# Docker build cache
+.docker/
