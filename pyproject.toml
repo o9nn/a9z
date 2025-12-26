@@ -1,0 +1,87 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-toga"
+version = "1.0.0"
+description = "A BeeWare Toga-based native GUI for Agent Zero with Himiko Toga personality"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Agent Zero Project", email = "agent@zero.ai"}
+]
+keywords = ["agent", "ai", "gui", "toga", "beeware", "agent-zero"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: MacOS X :: Cocoa",
+    "Environment :: Win32 (MS Windows)",
+    "Environment :: X11 Applications :: GTK",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: User Interfaces",
+]
+
+dependencies = [
+    "toga>=0.4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21",
+    "black>=23.0",
+    "isort>=5.0",
+    "flake8>=6.0",
+]
+macos = [
+    "toga-cocoa>=0.4.0",
+]
+linux = [
+    "toga-gtk>=0.4.0",
+]
+windows = [
+    "toga-winforms>=0.4.0",
+]
+all = [
+    "toga-cocoa>=0.4.0",
+    "toga-gtk>=0.4.0",
+    "toga-winforms>=0.4.0",
+]
+
+[project.scripts]
+agent-toga = "python.gui.agent_toga:main"
+
+[project.gui-scripts]
+agent-toga-gui = "python.gui.agent_toga:main"
+
+[project.urls]
+Homepage = "https://github.com/o9nn/a9z"
+Documentation = "https://github.com/o9nn/a9z/blob/main/docs/toga_gui.md"
+Repository = "https://github.com/o9nn/a9z"
+Issues = "https://github.com/o9nn/a9z/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["python*", "agents*"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310", "py311", "py312"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
